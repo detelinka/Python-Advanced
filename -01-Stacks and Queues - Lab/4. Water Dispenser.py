@@ -1,0 +1,25 @@
+from collections import deque
+
+liters = int(input())
+people = deque()
+line = input()
+
+while line != "Start":
+    people.append(line)
+    line = input()
+
+while line != "End":
+    line = input()
+    if line.isdigit():
+        person = people.popleft()
+        liters_needed = int(line)
+
+        if liters >= liters_needed:
+            liters -= liters_needed
+            print(f"{person} got water")
+        else:
+            print(f"{person} must wait")
+    elif line.startswith("refill"):
+        liters += int(line.split()[1])
+
+print(f"{liters} liters left")
