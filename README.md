@@ -28,9 +28,3 @@ stack.popleft(item) - премахване на елемент
 ### 10. Exam Preparation
 ### 11. Algorithms Introduction
 ### 12. Final Exam
-bjects and Classes / Обекти и класове ￼
-
-```python
-
-```
-
