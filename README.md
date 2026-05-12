@@ -10,10 +10,13 @@ stack.pop(item) - премахване на елемент
 ```
 Elements in a **queue** are added/removed from the
 top ("first in, first out") or **FIFO** order
-Doing inserts and pops from beggining of the queue is slow. Thats we use **collections.deque**
 ```python
 my_queue = collections.deque() - създаване на deque
-# from collections import deque
+
+създаване на deque чрез import
+from collections import deque
+my_queue = deque() 
+
 stack.append(item) - добавяне на елемент
 stack.popleft(item) - премахване на елемент
 ```
