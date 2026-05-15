@@ -1,2 +1,2 @@
-n = list(input().split())
+n = input().split()
 print(*reversed(n), sep=" ")

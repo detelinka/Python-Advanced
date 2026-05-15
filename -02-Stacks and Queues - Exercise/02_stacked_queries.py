@@ -16,4 +16,4 @@ for _ in range(n):
     elif command[0] == "4":
         print(min(stack))
 
-print(", ".join(str(x) for x in reversed(stack)))
+print(*reversed(stack), sep =", " )
