@@ -53,6 +53,8 @@ Every element of a set is unique.
 Sets are mutable, so we can add or remove elements from it
 Sets can be used to perform mathematical set operations (union, intersection, symmetric difference, etc.) 
 ```python
+s = {a, b, c} # type(s) -> set
+
 a = set([1, 2, 3, 4])
 b = set([3, 4, 5, 6])
 
