@@ -65,19 +65,82 @@ a >= b # a.issuperset(b) -> False
 a - b # a.difference(b) -> {1, 2}
 a ^ b # a.symmetric_difference(b) -> {1, 2, 5, 6}
 ```
+
+### 3. Multidimensional Lists /матрици/
+Multidimensional lists in Python are lists that contain other lists as their elements, creating a nested structure that can represent grids, matrices, or higher-dimensional data.
+
+**2D list (list of lists): GRID:**
+```python
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+# Access row 1, column 2
+print(matrix[1][2])  # 6
+# Edit the matrix
+matrix[1][2] = 10    # 10
+```
+**3D list: CUBE**
+```python
+cube = [
+    [[1, 2], [3, 4]],
+    [[5, 6], [7, 8]]
+]
+
+print(cube[1][0][1])  # 6
+```
+**Creating them dynamically:**
+```python
+# each row is an independent list (list comprehension)
+rows, cols = 3, 4
+grid = [[0 for _ in range(cols)] for _ in range(rows)]
+```
+
+**Creating MD List with Zeros - Using loops**
+```python
+matrix = []
+for i in range(3):
+    matrix.append([])
+    for j in range(2):
+        matrix[i].append(0)
+        
+# [[0, 0], [0, 0], [0, 0]]
+```
+**Creating 3X3 Grid with Numbers**
+```python
+matrix = []
+for i in range(3):
+    matrix.append([])
+    for j in range(1, 4):
+        matrix[i].append(j)
+    
+# [[1, 2, 3], [1, 2, 3], [1, 2, 3]]
+```
+**Creating a matrix with zeros (using Comprehensions)**
+```python
+matrix = [[0 for j in range(2)] for i in range(3)]
+```
+**Creating a matrix with numbers (using Comprehensions)**
+```python
+matrix = [[j for j in range(1, 4)] for i in range(3)]
+```
+**Flattening a matrix (using Comprehensions)**
+```python
+matrix = [[1, 2, 3], [4, 5, 6]]
+flattened = [num for sublist in matrix for num in sublist]
+# [1, 2, 3, 4, 5, 6]
+```
+### 4. Functions Advanced
 ```python
 
 ```
-```python
 
-```
-### 3. Stacks, Queues,Tuples and Sets
-### 4. Multidimensional Lists
-### 5. Functions Advanced
-### 6. Error Handling
-### 7. File Handling
-### 8. Workshop
-### 9. Modules
-### 10. Exam Preparation
-### 11. Algorithms Introduction
-### 12. Final Exam
+### 5. Error Handling
+### 6. File Handling
+### 7. Workshop
+### 8. Modules
+### 9. Exam Preparation
+### 10. Algorithms Introduction
+### 11. Final Exam
